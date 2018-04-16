@@ -1,8 +1,7 @@
 .catalog:
-  name: "mysql"
+  name: "bmxdsitedb"
   version: "v0.0.1"
   description: "A recommended stack for the MySQL RDBMS."
-  uuid: mysql-0
   minimum_rancher_version: v1.0.0
   questions:
     - variable: mysql_lb_port
