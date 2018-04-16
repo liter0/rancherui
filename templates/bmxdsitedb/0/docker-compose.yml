@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   mysql-lb:
     image: rancher/lb-service-haproxy:v0.6.4
