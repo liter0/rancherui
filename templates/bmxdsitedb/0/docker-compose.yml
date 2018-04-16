@@ -13,10 +13,10 @@ services:
   mysql:
     image: 192.168.1.15/smsdb:v1
     environment:
-      MYSQL_DATABASE: smsdb
-      MYSQL_PASSWORD: smsadmin
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: smsdb
+      MYSQL_DATABASE: 'smsdb'
+      MYSQL_PASSWORD: 'smsadmin'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'smsdb'
     tty: true
     stdin_open: true
     labels:
