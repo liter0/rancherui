@@ -1,0 +1,5 @@
+name: 官网数据库(MySQL)
+description: |
+  MySQL — 博明信德官网数据库
+version: v0.0.1
+category: Databases
