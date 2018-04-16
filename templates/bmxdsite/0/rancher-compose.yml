@@ -1,0 +1,15 @@
+.catalog:
+  name: 官网应用
+  version: v1
+  description: |
+    (tomcat)官网应用
+  minimum_rancher_version: v0.56.0
+tomcat-sms:
+  scale: 1
+  health_check:
+    port: 8081
+    interval: 5000
+    unhealthy_threshold: 3
+    request_line: ''
+    healthy_threshold: 2
+    response_timeout: 5000
