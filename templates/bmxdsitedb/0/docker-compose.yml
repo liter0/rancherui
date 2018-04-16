@@ -1,4 +1,21 @@
-mysql:
-	image: 192.168.1.15:5000/smsdb:v1
-	restart: always
-    
+version: '2'
+services:
+  mysql-lb:
+    image: rancher/lb-service-haproxy:v0.6.4
+    ports:
+      - ${mysql_lb_port}:${mysql_lb_port}
+  mysql-data:
+    image: busybox
+    labels:
+      io.rancher.container.start_once: true
+    volumes:
+      - /var/lib/mysql
+  mysql:
+    image: 192.168.1.15/smsdb:v1
+    environment:
+    tty: true
+    stdin_open: true
+    labels:
+      io.rancher.sidekicks: mysql-data
+    volumes_from:
+      - mysql-data
