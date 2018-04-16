@@ -21,7 +21,7 @@
       label: "MySQL Docker Image"
       type: "enum"
       options:
-        - "mysql:latest"
+        - "mysql:v0.0.1"
         - "mysql:8.0.1"
         - "mysql:8.0"
         - "mysql:8"
@@ -32,7 +32,7 @@
         - "mysql:5.6"
         - "mysql:5.5.56"
         - "mysql:5.5"
-      default: "mysql:latest"
+      default: "mysql:v0.0.1"
       required: true
     - variable: mysql_database
       description: "Optional, allows you to specify the name of a database to be created on image startup."
