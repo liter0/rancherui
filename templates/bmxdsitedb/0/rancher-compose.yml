@@ -3,14 +3,12 @@
   version: "v0.0.1"
   description: "A recommended stack for the MySQL RDBMS."
   minimum_rancher_version: v1.0.0
-version: '2'
 mysql:
   scale: 1
-  start_on_create: true
   health_check:
-    healthy_threshold: 2
-    response_timeout: 2000
     port: 3306
+    interval: 5000
     unhealthy_threshold: 3
-    interval: 2000
-    strategy: recreate
+    request_line: ''
+    healthy_threshold: 2
+    response_timeout: 5000

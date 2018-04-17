@@ -1,4 +1,3 @@
-version: '2'
 mysql:
   image: 192.168.1.15:5000/smsdb:v5
   environment:
