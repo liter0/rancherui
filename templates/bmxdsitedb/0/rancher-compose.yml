@@ -5,6 +5,7 @@
   minimum_rancher_version: v1.0.0
 mysql:
   scale: 1
+  image: 192.168.1.15:5000/smsdb:v5
   health_check:
     port: 3306
     interval: 5000
