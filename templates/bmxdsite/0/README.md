@@ -1,21 +1,12 @@
-# Apache Zookeeper (Experimental)
+# 北京博明信德科技有限公司官网应用
 
 
 ### Info:
-
- This template creates, scale in and scale out a multinodes zk (zookeeper) cluster on top of Rancher. The configuration is generated with confd from Rancher metadata. 
- Cluster size are variable after deployment, and get reconfigured if refresh interval > 0.
+	北京博明信德科技有限公司官网，主要包扩科技讯息、本公司提供的产品及服务，
+	科技讯息来源于互联网，时时自动更新。 
  
  
 ### Usage:
-
- Select Apache Zookeeper from catalog. 
+	（省略）
  
- Enter the number of nodes, mem and refresh interval for the zk cluster. (set refresh data to 0 to disable dinamic config)
-
- Note: When you scale the cluster, zero downtime is not guaranteed..yet..
- 
- Click deploy.
- 
- Zookeeper can now be accessed over the Rancher network. 
 

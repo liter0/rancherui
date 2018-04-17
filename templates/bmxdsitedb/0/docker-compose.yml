@@ -11,7 +11,7 @@ services:
     volumes:
       - /var/lib/mysql
   mysql:
-    image: 192.168.1.15:5000/smsdb:v1
+    image: 192.168.1.15:5000/smsdb:v5
     environment:
       MYSQL_DATABASE: 'smsdb'
       MYSQL_PASSWORD: 'smsadmin'
