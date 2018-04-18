@@ -1,14 +1,4 @@
 tomcat-sms:
   tty: true
   image: 192.168.1.15:5000/tomcat-sms:v1
-  ports:
-    - "8081:8080"
-  links:
-    - mysqlhost
-  stdin_open: true
-mysqlhost:
-  image: 192.168.1.15:5000/smsdb:v5
-  ports:
-    - "3306:3306"
-  tty: true
   stdin_open: true

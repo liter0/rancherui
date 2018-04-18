@@ -7,7 +7,6 @@
 tomcat-sms:
   scale: 1
   health_check:
-    port: 8081
     interval: 5000
     unhealthy_threshold: 3
     request_line: ''
