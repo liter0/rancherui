@@ -1,6 +1,6 @@
 .catalog:
   name: 官网应用
-  version: v1
+  version: v2
   description: |
     (tomcat)官网应用
   minimum_rancher_version: v0.56.0
