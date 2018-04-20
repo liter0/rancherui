@@ -1,6 +1,6 @@
 tomcat-sms:
   tty: true
-  image: 192.168.1.15:5000/tomcat-sms:v2
+  image: 192.168.1.15:5000/tomcat-sms:v1.0
   ports:
     - "8081:8080"
   links:
