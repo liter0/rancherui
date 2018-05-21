@@ -1,4 +1,4 @@
-mysql:
+oadb:
   image: 192.168.1.12/bmxd/oadb:v1.0
   environment:
     MYSQL_DATABASE: 'oa_p0004'
