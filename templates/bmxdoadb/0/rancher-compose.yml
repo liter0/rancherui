@@ -1,0 +1,15 @@
+.catalog:
+  name: "bmxdoadb"
+  version: "v1.0"
+  description: "A recommended stack for the MySQL RDBMS."
+  minimum_rancher_version: v1.0
+mysql:
+  scale: 1
+  image: 192.168.1.12/bmxd/oadb:v1.0
+  health_check:
+    port: 3306
+    interval: 5000
+    unhealthy_threshold: 3
+    request_line: ''
+    healthy_threshold: 2
+    response_timeout: 5000

@@ -1,0 +1,11 @@
+mysql:
+  image: 192.168.1.12/bmxd/oadb:v1.0
+  environment:
+    MYSQL_DATABASE: 'oa_p0004'
+    MYSQL_PASSWORD: 'nama1683'
+    MYSQL_ROOT_PASSWORD: 'nama1683'
+    MYSQL_USER: 'oa_p0003'
+  tty: true
+  stdin_open: true
+  ports:
+   - "3306:3306"
