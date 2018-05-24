@@ -1,29 +1,20 @@
 .catalog:
   name: OA应用
-  version: v1.3.1
+  version: v1.3.0
   description: |
     (tomcat)OA应用
   minimum_rancher_version: v0.5.0
   questions:
-    - variable: "PORT"
+    - variable: "ports"
       description: "宿主机端口"
       label: "ports:"
       required: true
-      type: "int"
-services:
-  oadb:
-    scale: 1
-    health_check:
-      port: 3306
-      interval: 5000
-      unhealthy_threshold: 3
-      healthy_threshold: 2
-      response_timeout: 5000
-  tomcat-oa:
-    scale: 1
-    health_check:
-      interval: 5000
-      unhealthy_threshold: 3
-      request_line: ''
-      healthy_threshold: 2
-      response_timeout: 5000
+      type: "int"    
+tomcat-oa:
+  scale: 1
+  health_check:
+    interval: 5000
+    unhealthy_threshold: 3
+    request_line: ''
+    healthy_threshold: 2
+    response_timeout: 5000
