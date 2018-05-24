@@ -1,6 +1,16 @@
-tomcat-oa:
-  tty: true
-  image: 192.168.1.12/bmxd/oa:v1.3.1
-  ports:
-    - "8081:8080"  
-  stdin_open: true
+services:
+  oadb:
+    image: 192.168.1.12/bmxd/oadb:v1.0
+    environment:
+      MYSQL_DATABASE: 'oa_p0004'
+      MYSQL_PASSWORD: 'nama1683'
+      MYSQL_ROOT_PASSWORD: 'nama1683'
+      MYSQL_USER: 'oa_p0003'
+  tomcat-oa:
+    tty: true
+    image: 192.168.1.12/bmxd/oa:v1.3.1
+    ports:
+      - "${PORT}:8080"  
+    depends_on:
+      - oadb
+    stdin_open: true
