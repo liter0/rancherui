@@ -1,13 +1,19 @@
 .catalog:
   name: OA应用
-  version: v1.0
+  version: v1.3.1
   description: |
     (tomcat)OA应用
   minimum_rancher_version: v0.5.0
+  questions:
+    - variable: "ports"
+      description: "宿主机端口"
+      label: "ports:"
+      required: true
+      type: "int"
+    
 tomcat-oa:
   scale: 1
   health_check:
-    port: 8081
     interval: 5000
     unhealthy_threshold: 3
     request_line: ''

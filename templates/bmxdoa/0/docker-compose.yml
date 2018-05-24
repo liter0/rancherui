@@ -1,6 +1,6 @@
 tomcat-oa:
   tty: true
-  image: 192.168.1.12/bmxd/oa:v1.0
+  image: 192.168.1.12/bmxd/oa:v1.3.1
   ports:
     - "8081:8080"  
   stdin_open: true
